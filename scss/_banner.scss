@@ -1,0 +1,30 @@
+.banner-containter {
+    margin: 0 auto;
+    max-width: 940px;
+    height: 496px;
+    padding: 0 $padding-md;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-bg-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+@media(max-width:992px) {
+    .banner-containter {
+        @include w-375;
+        width: 375px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-bg-img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+}

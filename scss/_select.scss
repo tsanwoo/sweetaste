@@ -1,0 +1,175 @@
+.select-background {
+    @include w-1024;
+    padding: 0 $padding-md;
+    margin-bottom: $margin-md ;
+
+
+}
+
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.select-card {
+    width: 300px;
+    height: 436px;
+    position: relative;
+
+}
+
+.select-img {
+    width: 300px;
+    height: 315px;
+    object-fit: cover;
+}
+
+.select-logo {
+    width: 36px;
+    height: 107px;
+    font-size: $font-sm;
+    writing-mode: vertical-lr;
+    background-color: $primary-300;
+    color: $primary-100;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+}
+
+.select-like-icon {
+    background-image: url(../image/heart_favorite_border.png);
+    width: 20px;
+    height: 18.35px;
+    position: absolute;
+    top: 19px;
+    right: 22px;
+
+}
+
+.select-content {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        font-size: $font-md ;
+        color: $primary-300;
+        padding: 14px 20px 14px 33px;
+
+        &:nth-child(2) {
+            border-left: 1px solid $primary-100;
+        }
+    }
+}
+
+
+
+.select-card button {
+    width: 300px;
+    height: 65px;
+    font-size: $font-lg;
+    background-color: $primary-100;
+    color: $primary-300;
+    border: none;
+}
+
+
+
+
+
+
+
+
+@media(max-width:992px) {
+    .select-container>.select-card:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .select-background {
+        @include w-375;
+        padding: 0 $padding-xm;
+        margin-bottom: 30px;
+    }
+
+    .select-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .select-card {
+        width: 315px;
+        height: 436px;
+        position: relative;
+
+    }
+
+    .select-img {
+        width: 315px;
+        height: 315px;
+        object-fit: cover;
+    }
+
+    .select-logo {
+        width: 36px;
+        height: 107px;
+        font-size: $font-sm;
+        writing-mode: vertical-lr;
+        background-color: $primary-300;
+        color: $primary-100;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 21px;
+
+    }
+
+    .select-like-icon {
+        background-image: url(../image/heart_favorite_border.png);
+        width: 20px;
+        height: 18.35px;
+        position: absolute;
+        top: 19px;
+        right: 24.2px;
+
+    }
+
+    .select-content {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            font-size: $font-md ;
+            color: $primary-300;
+            padding: 14px 25px 14px 38px;
+
+            &:nth-child(2) {
+                border-left: 1px solid $primary-100;
+            }
+        }
+    }
+
+
+
+    .select-card button {
+        width: 315px;
+        height: 65px;
+        font-size: $font-lg;
+        background-color: $primary-100;
+        color: $primary-300;
+        border: none;
+    }
+
+
+
+
+
+}
