@@ -46,3 +46,20 @@
     }
 
 }
+
+.main-product-box {
+    background-color: crimson;
+}
+
+.main-sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+
+
+}
+
+.sidebar-title {
+    background-color: $primary-300;
+}
